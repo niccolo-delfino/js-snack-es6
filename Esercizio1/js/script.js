@@ -1,7 +1,8 @@
 // Utilizzando const e/o let. Inserire un numero,
 // se è pari stampa il numero, se è dispari stampa il numero successivo.
 
-var chiediNumero = parseInt(prompt('Inserisci qui un numero positivo'));
+let chiediNumero = parseInt(prompt('Inserisci qui un numero positivo'));
+// In questo caso funziona anche con const!
 
 if (chiediNumero % 2 == 0) {
   console.log(chiediNumero);
