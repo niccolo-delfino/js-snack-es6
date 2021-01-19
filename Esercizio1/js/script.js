@@ -1,17 +1,10 @@
-// Jsnack1 - Creare un oggetto palla che abbia le seguenti proprietà.
-// Nome = palla
-// Peso = 10
-// Attraverso un prompt dare la possibilità all'utente di modificare il peso della palla.
+// Utilizzando const e/o let. Inserire un numero,
+// se è pari stampa il numero, se è dispari stampa il numero successivo.
 
-var palla = {
-  nome : 'palla',
-  peso : 10
-};
+var chiediNumero = parseInt(prompt('Inserisci qui un numero positivo'));
 
-console.log(palla.peso);
-
-var chiediPeso = parseInt(prompt('Quanto pesa la palla?'));
-
-palla.peso = chiediPeso;
-
-console.log(palla.peso);
+if (chiediNumero % 2 == 0) {
+  console.log(chiediNumero);
+} else if (chiediNumero % 2 != 0) {
+  console.log(chiediNumero + 1);
+}
