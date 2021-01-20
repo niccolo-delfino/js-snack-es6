@@ -8,10 +8,29 @@ const bici = [
   },
   {
     nome : 'Pro',
-    peso : 40
+    peso : 15
   },
   {
     nome : 'Standard',
     peso : 30
+  },
+  {
+    nome : 'Light',
+    peso : 10
   }
 ];
+
+const [biciUno, biciDue, biciTre, biciquattro] = bici
+
+const leggera = biciUno.peso;
+let biciLeggera = biciUno;
+
+for (let i = 1; i < bici.length; i++) {
+  if (bici[i].peso < biciLeggera.peso) {
+    biciLeggera = bici[i];
+  }
+}
+
+console.log(`
+La bici più leggera è il modello: ${biciLeggera.nome} e pesa: ${biciLeggera.peso} kg
+`);
